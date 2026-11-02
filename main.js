@@ -1,3 +1,5 @@
-const title = document.getElementById ("id");
 
-title.textContent = "asalom"
+
+let title = document.getElementById ("id");
+
+title.textContent = "alik";
