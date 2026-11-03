@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slider {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Hover effekti: Rasm biroz kattalashadi */
+.slider:hover img {
+    transform: scale(1.03);
+}
+
+/* Tugmalar uchun umumiy stil */
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+#prev {
+    left: 16px;
+}
+
+#next {
+    right: 16px;
+}
+
+/* Tugmalar hover va active effekti */
+.slider button:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #0f172a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slider button:active {
+    transform: translateY(-50%) scale(0.95);
+}
