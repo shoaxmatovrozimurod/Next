@@ -65,7 +65,6 @@ body {
     right: 16px;
 }
 
-/* Tugmalar hover va active effekti */
 .slider button:hover {
     background: rgba(255, 255, 255, 0.9);
     color: #0f172a;
