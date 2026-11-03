@@ -35,7 +35,6 @@ body {
     transform: scale(1.03);
 }
 
-/* Tugmalar uchun umumiy stil */
 .slider button {
     position: absolute;
     top: 50%;
