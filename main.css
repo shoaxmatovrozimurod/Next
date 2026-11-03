@@ -50,7 +50,7 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     /* transition: all 0.3s ease; */
     /* user-select: none; */
 }
